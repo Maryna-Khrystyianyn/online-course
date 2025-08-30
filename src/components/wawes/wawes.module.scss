@@ -1,0 +1,44 @@
+.wawes_container {
+ 
+    margin-top: -100px;
+    position: relative;
+  //   background-color: $bg-light;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+  
+    .wawe {
+      position: absolute;
+      top: -10px;
+      left:-100%;
+      width: 200%;
+      height: 120px;
+      
+    }
+    .wawe1 {
+      opacity: 40%;
+      animation: waveMove 6s linear infinite;
+    }
+    .wawe2 {
+      opacity: 60%;
+      animation: waveMove 10s linear infinite;
+    }
+    .wawe3 {
+      opacity: 40%;
+      animation: waveMove 14s linear infinite;
+    }
+    .wawe4 {
+      // opacity: 90%;
+      animation: waveMove 18s linear infinite;
+      // top: -30px;
+    }
+  }
+  
+  @keyframes waveMove {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }

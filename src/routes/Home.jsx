@@ -1,13 +1,13 @@
-import Search from "../components/search/Search";
+import Main from "../components/main/Main";
+import Wawes from "../components/wawes/Wawes";
+
 
 const Home = () => {
-  const handelSearch = (searchValue) => {
-    console.log("get from search", searchValue);
-  };
+ 
   return (
     <div>
-      Home
-      <Search title="Search" onSubmit={handelSearch} />
+     <Main/>
+     <Wawes/>
     </div>
   );
 };

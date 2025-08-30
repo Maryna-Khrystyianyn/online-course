@@ -1,0 +1,76 @@
+@import "../../style/variable.scss";
+@import "../../style/mixins.scss";
+
+.main {
+    padding: $pading-left-right;
+    background-color: $bg-light;
+    padding-bottom: 80px;
+    overflow: hidden;
+    .bg_container {
+      position: relative;
+      height: 100%;
+      .icon {
+        position: absolute;
+        width: 40px;
+      }
+      .icon1 {
+        top: -10px;
+        left: 60%;
+      }
+      .icon2 {
+        top: 320px;
+        left: 50%;
+      }
+      .icon3 {
+        top: -20px;
+        left: -10px;
+      }
+      .icon4 {
+        top: 285px;
+        left: 100%;
+      }
+  
+      .icon5 {
+        top: 280px;
+        left: 5%;
+      }
+      .icon6 {
+        top: 265px;
+        left: 30%;
+      }
+      .icon7 {
+        top: 15px;
+        left: 40%;
+      }
+    }
+    .main_container {
+      display: grid;
+      grid-template-columns: auto 550px;
+  
+      .img {
+        text-align: right;
+        img {
+          width: 90%;
+        }
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+          font-weight: 900;
+          line-height: 135%;
+        }
+        span {
+          color: $orange-akcent;
+        }
+        p {
+          margin: 10px 0;
+          color: $primary-gray;
+          font-size: 0.8rem;
+          
+        }
+       
+      }
+    }
+  }

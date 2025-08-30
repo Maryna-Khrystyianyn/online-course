@@ -1,9 +1,15 @@
 @import "../src/style/variable.scss";
 @import "../src/style/mixins.scss";
+@import url(https://fonts.bunny.net/css?family=roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
+
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: $primary-black;
+  }
+  body {
+    background-color: $bg-main;
+    font-family: "Roboto", sans-serif;
   }

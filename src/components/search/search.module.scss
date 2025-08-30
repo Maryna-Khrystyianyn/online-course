@@ -1,0 +1,28 @@
+@import "../../style/variable.scss";
+@import "../../style/mixins.scss";
+
+.form_search {
+    max-width: 500px;
+    margin-top: 30px;
+    position: relative;
+    input {
+      width: 100%;
+      height: 39px;
+      padding: 10px 5px;
+      border-radius: $border-radius;
+      border: 2px solid $bg-darck;
+    }
+    .btn_search {
+      position: absolute;
+      top: 0;
+      left: calc(100% - 120px);
+      @include btn();
+      background-color: $bg-darck;
+      color: $main-white;
+      border: 2px solid $bg-darck;
+      &:hover {
+        color: $bg-darck;
+        background: $bg-light;
+      }
+    }
+  }
