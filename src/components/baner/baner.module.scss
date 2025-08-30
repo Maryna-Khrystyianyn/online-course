@@ -1,0 +1,44 @@
+@import "../../style/variable.scss";
+@import "../../style/mixins.scss";
+
+.container{
+ background-color: $bg-darck;  
+  display: flex;
+  margin: 0 auto;
+  padding: 30px;
+  gap:30px;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+.item_container {
+  
+  display: flex;
+  max-width: 340px;
+  gap: 10px;
+
+  .img_container {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 80px;
+    height: 80px;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .title{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    h3, p {
+        color: white;
+      }
+    h3{
+        font-size: 1rem;
+    }  
+    p{
+        font-size: 0.8rem;
+    }
+  }
+}
