@@ -1,0 +1,59 @@
+@import "../../style/variable.scss";
+@import "../../style/mixins.scss";
+
+.header {
+  background-color: $bg-light;
+  padding: 10px $pading-left-right;
+  display: grid;
+  grid-template-columns: 200px auto ;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    img {
+      height: 20px;
+      transform: rotate(20deg);
+    }
+    span {
+      font-size: 1.2rem;
+      font-weight: 700;
+      font-style: italic;
+    }
+  }
+  .nav {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    align-items: center;
+
+    .menu {
+      display: flex;
+      ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        li {
+          a {
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            @include unterline($orange-akcent);
+          }
+        }
+      }
+    }
+    .sign {
+      button {
+        @include btn;
+        background-color: $bg-darck;
+        color: $main-white;
+        border: 2px solid $bg-darck;
+
+        &:hover {
+          color: $bg-darck;
+          background: none;
+        }
+      }
+    }
+  }
+}

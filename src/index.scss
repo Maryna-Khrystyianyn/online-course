@@ -1,0 +1,9 @@
+@import "../src/style/variable.scss";
+@import "../src/style/mixins.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $primary-black;
+  }
