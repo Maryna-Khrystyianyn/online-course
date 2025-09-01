@@ -1,0 +1,102 @@
+@import "../../style/variable.scss";
+@import "../../style/mixins.scss";
+
+.course_item_container {
+  @include item_container();
+  max-width: 400px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.item_img {
+  width: 97%;
+  border-radius: $cart-border-radius;
+  height: 180px;
+  object-fit: cover;
+}
+
+.item_text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+  width: 97%;
+  font-size: 14px;
+  border-bottom: 3px dotted #cac9c9;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  p {
+    color: $primary-gray;
+  }
+  h3 {
+    font-size: x-large;
+  }
+
+  .price {
+    font-size: x-large;
+    span {
+      color: $orange-akcent;
+      font-weight: 700;
+    }
+  }
+  .oldPrice {
+    span {
+      color: $primary-gray;
+      text-decoration: line-through;
+    }
+  }
+}
+
+.none {
+  display: none;
+}
+.cours_info {
+  width: 97%;
+  display: flex;
+  gap: 25px;
+}
+
+.infoItem_container {
+  display: flex;
+  gap: 5px;
+  p {min-width: 80px;
+    color: $primary-gray;
+  }
+}
+
+.join_btn {
+  @include btn();
+  width: 200px;
+  font-size: larger;
+  background-color: $orange-akcent;
+  color: white;
+  border:1px solid $orange-akcent;
+  &:hover {
+    color: $orange-akcent;
+    background: none;
+  }
+  position: absolute;
+  bottom: -20px;
+  left: 100px;
+}
+
+.popular_courses_container{
+   
+    padding: 40px $pading-left-right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    h2{font-size: xx-large;}
+    p{
+        color: $primary-gray;
+    }
+}
+
+.popular_courses_item_container{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+

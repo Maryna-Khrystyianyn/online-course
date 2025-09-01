@@ -4,8 +4,11 @@
 .header {
   background-color: $bg-light;
   padding: 10px $pading-left-right;
+  position: fixed;
+  width: 100%;
   display: grid;
   grid-template-columns: 200px auto ;
+  z-index: 100;
 
   .logo {
     display: flex;
