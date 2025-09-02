@@ -1,0 +1,14 @@
+@import "../../style/variable.scss";
+@import "../../style/mixins.scss";
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    margin: 20px 0;
+}
+.img{
+background-color: $bg-darck;
+padding: 10px;
+border-radius: 10px;
+}

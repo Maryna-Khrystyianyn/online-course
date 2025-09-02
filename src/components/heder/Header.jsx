@@ -3,6 +3,7 @@ import styles from "./header.module.scss";
 const Header = () => {
   return (
     <header className={styles.header}>
+      <div className={styles.header_container}>
       <div className={styles.logo}>
         <img src="../../../public/img/s-logo.png" alt="Smart logo" />
         <span>mart</span>
@@ -27,6 +28,8 @@ const Header = () => {
           <button>Sign in</button>
         </div>
       </div>
+      </div>
+     
     </header>
   );
 };

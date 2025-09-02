@@ -6,55 +6,63 @@
   padding: 10px $pading-left-right;
   position: fixed;
   width: 100%;
-  display: grid;
-  grid-template-columns: 200px auto ;
+ 
+ 
   z-index: 100;
+  .header_container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px auto;
+    max-width: $container-width;
 
-  .logo {
-    display: flex;
-    align-items: center;
-    img {
-      height: 20px;
-      transform: rotate(20deg);
-    }
-    span {
-      font-size: 1.2rem;
-      font-weight: 700;
-      font-style: italic;
-    }
-  }
-  .nav {
-    display: flex;
-    justify-content: end;
-    gap: 30px;
-    align-items: center;
 
-    .menu {
+    .logo {
       display: flex;
-      ul {
+      align-items: center;
+      img {
+        height: 30px;
+        transform: rotate(20deg);
+      }
+      span {
+        font-size: 2rem;
+        font-weight: 700;
+        font-style: italic;
+      }
+    }
+
+    .nav {
+      display: flex;
+      justify-content: end;
+      gap: 30px;
+      align-items: center;
+
+      .menu {
         display: flex;
-        gap: 30px;
-        list-style: none;
-        li {
-          a {
-            text-decoration: none;
-            font-size: 0.8rem;
-            font-weight: 500;
-            @include unterline($orange-akcent);
+        ul {
+          display: flex;
+          gap: 30px;
+          list-style: none;
+          li {
+            a {
+              text-decoration: none;
+              font-size: 0.8rem;
+              font-weight: 500;
+              @include unterline($orange-akcent);
+            }
           }
         }
       }
-    }
-    .sign {
-      button {
-        @include btn;
-        background-color: $bg-darck;
-        color: $main-white;
-        border: 2px solid $bg-darck;
+      .sign {
+        button {
+          @include btn;
+          background-color: $bg-darck;
+          color: $main-white;
+          border: 2px solid $bg-darck;
 
-        &:hover {
-          color: $bg-darck;
-          background: none;
+          &:hover {
+            color: $bg-darck;
+            background: none;
+          }
         }
       }
     }

@@ -1,0 +1,68 @@
+@import "../../style/variable.scss";
+@import "../../style/mixins.scss";
+
+.premium_bg {
+  background-color: $bg-light;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.bg_container {
+  .icon {
+    position: absolute;
+    width: 60px;
+  }
+
+  .icon1 {
+    top: 20px;
+    left: 20%;
+  }
+  .icon2 {
+    top: 140px;
+    left: 10%;
+  }
+  .icon3 {
+    top: 50px;
+    left: 35%;
+  }
+  .icon4 {
+    top: 170px;
+    left: 40%;
+  }
+  .icon5 {
+    top: 300px;
+    left: 10%;
+  }
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; // Content über Icons
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 20px ;
+  .img_container {
+    position: relative;
+    width: 600px;
+    height: 380px;
+    .img {
+      position: absolute;
+      max-width: 360px;
+      margin-left: 40px;
+    }
+  }
+  .text{
+    h2{
+        font-size: xx-large;
+        max-width: 360px;
+        padding: 20px 0;
+        span{
+            color: $orange-akcent;
+        }
+    }
+  }
+}
