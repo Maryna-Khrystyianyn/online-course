@@ -1,0 +1,53 @@
+@import "../../style/variable.scss";
+@import "../../style/mixins.scss";
+
+.reviews {
+  width: $container-width;
+  margin: 100px auto 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  h2 {
+    font-size: xx-large;
+  }
+  span {
+    margin-top: -30px;
+    color: $primary-gray;
+  }
+}
+
+.container {
+  @include item_container();
+  width: 360px;
+  align-items: start;
+  justify-content: space-between;
+  height: 200px;
+  .text {
+    font-size: medium;
+    font-weight: 400;
+    color: $primary-gray;
+  }
+  .user {
+    display: flex;
+    
+
+    gap: 20px;
+    img {
+      width: 47px;
+      height: 47px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .user_info {
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: medium;
+        font-weight: 400;
+        color: $primary-gray;
+      }
+    }
+  }
+}

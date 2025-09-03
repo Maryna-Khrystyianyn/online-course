@@ -19,6 +19,12 @@ const Header = () => {
               <a href="">About Us</a>
             </li>
             <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Start Learning</a>
+            </li>
+            <li>
               <a href="">Contact</a>
             </li>
           </ul>

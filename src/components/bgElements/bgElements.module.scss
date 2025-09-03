@@ -1,0 +1,22 @@
+.elips_left, .elips_right, .arrow, .arrow_rotate{
+    position: absolute;
+    
+}
+
+.elips_left{
+    top:1500px
+}
+
+.elips_right{
+    top:1600px;
+    right:0px
+}
+.arrow{
+    top:640px;
+    right:5%;
+}
+.arrow_rotate{
+    top:2140px;
+    left: 6%;
+    transform: rotate(190deg);
+}
