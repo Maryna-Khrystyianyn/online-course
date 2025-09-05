@@ -6,7 +6,7 @@ const ReviewsItem = ({ review }) => {
       <div className={styles.text}>{review.text}</div>
       <div className={styles.user}>
         <img
-          src={`../../../public/img/aurhors/${review.author.img}`}
+          src={`${import.meta.env.BASE_URL}img/aurhors/${review.author.img}`}
           alt={review.author.name}
         />
         <div className={styles.user_info}>

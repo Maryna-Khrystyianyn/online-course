@@ -5,22 +5,22 @@ const BgElements = () => {
     <div>
       <img
         className={styles.elips_left}
-        src="../../../public/img/bg-img/Ellipse-left.png"
+        src={`${import.meta.env.BASE_URL}img/bg-img/Ellipse-left.png`}
         alt=""
       />
       <img
         className={styles.elips_right}
-        src="../../../public/img/bg-img/Ellipse-reight.png"
+        src={`${import.meta.env.BASE_URL}img/bg-img/Ellipse-reight.png`}
         alt=""
       />
        <img
         className={styles.arrow}
-        src="../../../public/img/bg-img/vector.png"
+        src={`${import.meta.env.BASE_URL}img/bg-img/vector.png`}
         alt=""
       />
        <img
         className={styles.arrow_rotate}
-        src="../../../public/img/bg-img/vector.png"
+        src={`${import.meta.env.BASE_URL}img/bg-img/vector.png`}
         alt=""
       />
     </div>

@@ -5,7 +5,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.header_container}>
       <div className={styles.logo}>
-        <img src="../../../public/img/s-logo.png" alt="Smart logo" />
+      <img src={`${import.meta.env.BASE_URL}img/s-logo.png`} alt="Smart logo" />
         <span>mart</span>
       </div>
 

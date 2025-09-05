@@ -23,7 +23,7 @@ const CourseItem = ({ course, id }) => {
     <div className={styles.course_item_container}>
       <img
         className={styles.item_img}
-        src={`../../../public/img/courses/${img}`}
+        src={`${import.meta.env.BASE_URL}img/courses/${img}`}
         alt={title}
       />
       <div className={styles.item_text}>

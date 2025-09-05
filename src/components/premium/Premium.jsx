@@ -7,27 +7,27 @@ const Premium = () => {
     <div className={styles.premium_bg}>
 <div className={styles.bg_container}>
         <img
-          src="../../../public/img/bg-icons/comp.png"
+          src={`${import.meta.env.BASE_URL}img/bg-icons/comp.png`}
           alt=""
           className={`${styles.icon} ${styles.icon1}`}
         />
         <img
-          src="../../../public/img/bg-icons/cosmos.png"
+          src={`${import.meta.env.BASE_URL}img/bg-icons/cosmos.png`}
           alt=""
           className={`${styles.icon} ${styles.icon2}`}
         />
         <img
-          src="../../../public/img/bg-icons/light.png"
+          src={`${import.meta.env.BASE_URL}img/bg-icons/light.png`}
           alt=""
           className={`${styles.icon} ${styles.icon3}`}
         />
         <img
-          src="../../../public/img/bg-icons/Erde.png"
+          src={`${import.meta.env.BASE_URL}img/bg-icons/Erde.png`}
           alt=""
           className={`${styles.icon} ${styles.icon4}`}
         />
         <img
-          src="../../../public/img/bg-icons/kolba.png"
+          src={`${import.meta.env.BASE_URL}img/bg-icons/kolba.png`}
           alt=""
           className={`${styles.icon} ${styles.icon5}`}
         />
@@ -36,7 +36,7 @@ const Premium = () => {
 
         <div className={styles.container}>
             <div className={styles.img_container}>
-                <img className={styles.img} src="../../../public/img/premium.png" alt="premium" />
+                <img className={styles.img} src={`${import.meta.env.BASE_URL}img/premium.png`} alt="premium" />
             </div>
             <div className={styles.text}>
                 <h2>Premium <span>Learning</span> Experience</h2>

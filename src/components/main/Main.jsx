@@ -11,37 +11,37 @@ const Main = () => {
     <div className={styles.main}>
       <div className={styles.bg_container}>
         <img
-          src="../../../public/img/bg-icons/comp.png"
+          src={`${import.meta.env.BASE_URL}img/bg-icons/comp.png`}
           alt=""
           className={`${styles.icon} ${styles.icon1}`}
         />
         <img
-          src="../../../public/img/bg-icons/cosmos.png"
+          src={`${import.meta.env.BASE_URL}img/bg-icons/cosmos.png`}
           alt=""
           className={`${styles.icon} ${styles.icon2}`}
         />
         <img
-          src="../../../public/img/bg-icons/light.png"
+          src={`${import.meta.env.BASE_URL}img/bg-icons/light.png`}
           alt=""
           className={`${styles.icon} ${styles.icon3}`}
         />
         <img
-          src="../../../public/img/bg-icons/erde.png"
+          src={`${import.meta.env.BASE_URL}img/bg-icons/erde.png`}
           alt=""
           className={`${styles.icon} ${styles.icon4}`}
         />
         <img
-          src="../../../public/img/bg-icons/kolba.png"
+          src={`${import.meta.env.BASE_URL}img/bg-icons/kolba.png`}
           alt=""
           className={`${styles.icon} ${styles.icon5}`}
         />
         <img
-          src="../../../public/img/bg-icons/pen.png"
+          src={`${import.meta.env.BASE_URL}img/bg-icons/pen.png`}
           alt=""
           className={`${styles.icon} ${styles.icon6}`}
         />
         <img
-          src="../../../public/img/bg-icons/plinear.png"
+          src={`${import.meta.env.BASE_URL}img/bg-icons/plinear.png`}
           alt=""
           className={`${styles.icon} ${styles.icon7}`}
         />
@@ -64,7 +64,7 @@ const Main = () => {
           <Search title="Search" onSubmit={handelSearch} />
         </div>
         <div className={styles.img}>
-          <img src="../../../public/img/main.png" alt="smart people learn" />
+          <img src={`${import.meta.env.BASE_URL}img/main.png`} alt="smart people learn" />
         </div>
       </div>
     </div>
