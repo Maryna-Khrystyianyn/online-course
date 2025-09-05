@@ -7,11 +7,10 @@ import Reveal from "../components/reveal/Reveal";
 import Reviews from "../components/reviews/Reviews";
 import Wawes from "../components/wawes/Wawes";
 
-
 const Home = () => {
   return (
-    <div style={{width:"100%", position:"relative"}}>
-<BgElements/>
+    <div style={{ width: "100%", position: "relative" }}>
+      <BgElements />
       <Main />
       <Reveal>
         <Wawes />
